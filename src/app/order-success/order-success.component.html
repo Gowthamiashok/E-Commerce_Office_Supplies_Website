@@ -1,0 +1,107 @@
+<div class="wrapper">
+  <h2>Payment Form</h2>
+  <form action="" method="post">
+      <!--Account Information Start-->
+      <h4>Account</h4>
+      <div class="input_group">
+          <div class="input_box">
+              <input type="text" placeholder="Full Name" required class="name">
+              <fa-icon [icon]="faUserAlt" class="icon"></fa-icon>
+          </div>
+          <div class="input_box">
+              <input type="text" placeholder="Name on Card" required class="name">
+              <fa-icon [icon]="faUserAlt" class="icon"></fa-icon>
+          </div>
+      </div>
+      <div class="input_group">
+          <div class="input_box">
+              <input type="email" placeholder="Email Address" required class="name">
+              <fa-icon [icon]="faEnvelope" class="icon"></fa-icon>
+          </div>
+      </div>
+      <div class="input_group">
+          <div class="input_box">
+              <input type="text" placeholder="Address" required class="name">
+              <fa-icon [icon]="faMapMarkerAlt" class="icon"></fa-icon>
+          </div>
+      </div>
+      <div class="input_group">
+          <div class="input_box">
+              <input type="text" placeholder="City" required class="name">
+              <fa-icon [icon]="faBuilding" class="icon"></fa-icon>
+          </div>
+      </div>
+      <!--Account Information End-->
+
+
+      <!--DOB & Gender Start-->
+      <div class="input_group">
+          <div class="input_box">
+              <h4>Date Of Birth</h4>
+              <input type="text" placeholder="DD" required class="dob">
+              <input type="text" placeholder="MM" required class="dob">
+              <input type="text" placeholder="YYYY" required class="dob">
+          </div>
+          <div class="input_box">
+              <h4>Gender</h4>
+              <input type="radio" name="gender" class="radio" id="b1" checked>
+              <label for="b1">Male</label>
+              <input type="radio" name="gender" class="radio" id="b2">
+              <label for="b2">Female</label>
+          </div>
+      </div>
+      <!--DOB & Gender End-->
+
+
+      <!--Payment Details Start-->
+      <div class="input_group">
+          <div class="input_box">
+              <h4>Payment Details</h4>
+              <input type="radio" name="pay" class="radio" id="bc1" checked>
+              <label for="bc1"><span>
+                Credit Card</span></label>
+              <input type="radio" name="pay" class="radio" id="bc2">
+              <label for="bc2"><span>
+                Debit Card</span></label>
+          </div>
+      </div>
+      <div class="input_group">
+          <div class="input_box">
+              <input type="tel" name="" class="name" placeholder="Card Number 1111-2222-3333-4444" required>
+              <fa-icon [icon]="faCreditCard" class="icon"></fa-icon>
+          </div>
+      </div>
+      <div class="input_group">
+          <div class="input_box">
+              <input type="tel" name="" class="name" placeholder="Card CVC 632" required>
+              <fa-icon [icon]="faUserAlt" class="icon"></fa-icon>
+          </div>
+      </div>
+      <div class="input_group">
+          <div class="input_box">
+              <div class="input_box">
+                  <input type="number" placeholder="Exp Month" required class="name">
+                  <fa-icon [icon]="faCalendarAlt" class="icon" aria-hidden="true"></fa-icon>
+              </div>
+          </div>
+          <div class="input_box">
+              <input type="number" placeholder="Exp Year" required class="name">
+              <fa-icon [icon]="faCalendarAlt" class="icon" aria-hidden="true"></fa-icon>
+          </div>
+      </div>
+      <div class="input_box">
+          <input type="number" placeholder="Enter Amount" required class="name">
+          <fa-icon [icon]="faMoneyCheckAlt" class="icon" aria-hidden="true"></fa-icon>
+      </div>
+      <!--Payment Details End-->
+
+      <div class="input_group">
+          <div class="input_box">
+              <button routerLink="/payment" type="submit">PAY NOW</button>
+          </div>
+      </div>
+
+  </form>
+</div>
+<br>
+<br>

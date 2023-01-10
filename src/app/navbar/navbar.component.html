@@ -1,0 +1,64 @@
+<nav class ="navbar navbar-expand-lg top">
+    <div class="container-fluid">
+        <p class="heading1"><b>THE BIGGEST ONLINE OFFICE SUPPLIES AND STATIONERY SHOP IN INDIA</b></p>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand heading2 name">OFFICE MART</a> &nbsp;&nbsp;
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/">
+                <fa-icon [icon]="faHome" style="position:absolute;margin-top: -2px;color: white;font-size: 23px;"></fa-icon>
+              </a>
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/shopping-cart">
+                <fa-icon [icon]="faShoppingCart" style="color: white;font-size: 20px;"></fa-icon>&nbsp;
+                <sup style="font-size: small;"><span class="badge badge-warning badge rounded-circle" *ngIf="cart$ | async as cart">
+                  {{ cart.totalItemsCount }}
+                </span></sup>
+              </a>
+            </li>&nbsp;&nbsp;
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/contactform">
+                <fa-icon [icon]="faPhoneAlt" style="color: white;font-size: 20px;"></fa-icon>
+              </a>
+            </li>&nbsp;&nbsp;
+            <ng-template #anonymousUser>
+              <li class="nav-item">
+                <a class="nav-link active "  href="/login">Login</a>
+              </li>
+            </ng-template>
+            
+            <li ngbDropdown *ngIf="appUser; else anonymousUser" class="nav-item dropdown">
+              <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ appUser.name }}
+              </a>
+              <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+                <li><a class="dropdown-item" routerLink="/my/orders">My Orders</a></li>
+                <ng-container *ngIf="appUser.isAdmin">
+                  <li><a class="dropdown-item" routerLink="/admin/orders">Manage Orders</a></li>
+                  <li><a class="dropdown-item" routerLink="/admin/products">Manage Products</a></li>
+
+                </ng-container>
+                <li><a class="dropdown-item" (click)="logout()">Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      
+  </nav>
+
+  <nav class ="navbar navbar-expand-lg top">
+  </nav>
+

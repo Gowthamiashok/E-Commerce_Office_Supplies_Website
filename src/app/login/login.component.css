@@ -1,0 +1,12 @@
+button{
+    height: 45px;
+}
+.card{
+    margin: 0 auto;
+    float:none;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.sign {
+    font-family: 'Times New Roman';
+}

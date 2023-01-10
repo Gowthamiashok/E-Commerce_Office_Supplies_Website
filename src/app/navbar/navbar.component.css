@@ -1,0 +1,33 @@
+.top {
+    background-color:skyblue;
+}
+
+.heading1 {
+    color:black;
+    font-size: small;
+    font-family: Garamond;
+}
+
+.heading2 {
+    color:skyblue;
+    font-family: Garamond;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+.name {
+    color:skyblue;
+}
+.new {
+    background-color: skyblue;
+}
+.badge {
+    background-color:skyblue;
+    color:black;
+
+}
+.badge1 {
+    background-color: red;
+    color: white;
+}

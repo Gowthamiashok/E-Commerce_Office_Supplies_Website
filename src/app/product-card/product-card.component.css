@@ -1,0 +1,41 @@
+
+.card {
+    margin-bottom: 30px;
+    height: 28vw;
+    width:80%;
+    object-fit:cover;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card-footer {
+    padding:0;
+}
+
+.card-footer button {
+    cursor: pointer;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    background-color: black;
+    color:skyblue;
+  }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 250px;
+    margin-top: 25px;
+    
+}

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body {
+    background: #EEEEEE;
+    font-family: 'Hind Siliguri', sans-serif
+}
+
+.card {
+    width: 300px;
+    
+}
+.btn1 {
+    color:white;
+    background-color: black;
+}
+.btn2 {
+    color:white;
+    background-color: black;
+}
+.my-card {
+    border: 2px solid #040405;
+    border-radius: 20px;
+}
+
+.adiv {
+    background:white;
+    border-radius: 15px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 12px;
+    height: 46px
+}
+
+img {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer
+}
+
+.fas {
+    cursor: pointer
+}
+
+.fa-chevron-left {
+    color: #fff;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: bold
+}
+
+small {
+    font-size: 10px;
+    color: #898989
+}
+
+.form-control {
+    border: none;
+    background: #F6F7FB;
+    font-size: 12px
+}
+.text {
+    color: black;
+    font-family: "Times New Roman";
+    letter-spacing: 1px;
+    font-size: medium;
+}
+.form-control:focus {
+    box-shadow: none;
+    background: #F6F7FB
+}
+
+.form-control::placeholder {
+    font-size: 12px;
+    color: #B8B9BD
+}
+
+.btn-primary {
+    background: #0063FF;
+    padding: 4px 0 7px;
+    border: none;
+    width:100px;
+}
+
+.btn-primary:focus {
+    box-shadow: none
+}
+
+.btn-primary span {
+    font-size: 12px;
+    color: white;
+}
+
+p.mt-3 {
+    font-size: 11px;
+    color: #B8B9BD;
+    cursor: pointer;
+}
+*{
+    margin: 0;
+    padding: 0;
+
+  }
+  .center{
+    position: absolute;
+    top: 185px;
+    left: 110px;
+    transform: translate(-50%, -50%);
+  }
+  .center .stars{
+    height: 40px;
+    width: 500px;
+    text-align: center;
+  }
+  .stars input{
+    display: none;
+  }
+  .stars label{
+    float: right;
+    font-size: 50px;
+    color: lightgrey;
+    margin: 0 5px;
+    text-shadow: 1px 1px #bbb;
+  }
+  .stars label:before{
+    content: '★';
+  }
+  .stars input:checked ~ label{
+    color: gold;
+    text-shadow: 1px 1px #c60;
+  }
+  .stars:not(:checked) > label:hover,
+  .stars:not(:checked) > label:hover ~ label{
+    color: gold;
+  }
+  .stars input:checked > label:hover,
+  .stars input:checked > label:hover ~ label{
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+  }
+  .stars .result:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 350px;
+    transform: translateX(-47%);
+    bottom: -30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+  }
+  .stars input:checked ~ .result:before{
+    display: block;
+  }
+  .stars #five:checked ~ .result:before{
+    content: "I love it ";
+  }
+  .stars #four:checked ~ .result:before{
+    content: "I like it ";
+  }
+  .stars #three:checked ~ .result:before{
+    content: "It's good ";
+  }
+  .stars #two:checked ~ .result:before{
+    content: "I don't like it ";
+  }
+  .stars #one:checked ~ .result:before{
+    content: "I hate it ";
+  }

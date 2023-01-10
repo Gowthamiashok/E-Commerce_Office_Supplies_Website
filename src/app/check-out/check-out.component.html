@@ -1,0 +1,10 @@
+<br>
+<h2>Shipping <img src="./assets/ship1 (2).jpg" alt="picture" width=100 height=100></h2>
+<div class="row" *ngIf="cart$ | async as cart">
+    <div class="col-6">
+        <shipping-form [cart]="cart"></shipping-form>
+    </div>
+    <div class="col-6">
+        <shopping-cart-summary [cart]="cart"></shopping-cart-summary>
+    </div>
+</div>

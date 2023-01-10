@@ -1,0 +1,28 @@
+<br><br><br>
+
+<div class="container d-flex justify-content-center">
+    <div class="card my-card" style="width:30rem;height:30rem">
+        <div class="d-flex flex-row justify-content-between p-3 adiv text"> <i class="fas fa-chevron-left"></i> <span class="pb-3">FEEDBACK</span> <i class="fas fa-times"></i> </div><hr>
+        <div class="mt-2 p-4 text-center">
+            <h3 class="mb-0">Your feedback help us to improve.</h3> <small class="px-3">Please let us know about your shopping experience.</small>
+            <div class="center">
+                <div class="stars">
+                  <input type="radio" id="five" name="rate" value="5">
+                  <label for="five"></label>
+                  <input type="radio" id="four" name="rate" value="4">
+                  <label for="four"></label>
+                  <input type="radio" id="three" name="rate" value="3">
+                  <label for="three"></label>
+                  <input type="radio" id="two" name="rate" value="2">
+                  <label for="two"></label>
+                  <input type="radio" id="one" name="rate" value="1">
+                  <label for="one"></label>
+                  <span class="result"></span>
+                </div>
+             </div><br><br><br><br><br><br>
+            <div class="form-group mt-4"> <textarea class="form-control message" rows="4" placeholder="   Message"></textarea> </div><br>
+            <div class="mt-2"> <button (click)="feed()" type="button" class="btn btn1 btn-block" style="width:180px;font-family: Georgia;height:40px;">Send feedback</button> </div><br>
+            <button routerLink="/products" class="btn btn2" style="width:180px;font-family: Georgia;height:40px;">Continue shopping</button>
+        </div>
+    </div>
+</div><br><br><br>

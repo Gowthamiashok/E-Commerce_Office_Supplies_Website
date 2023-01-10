@@ -1,0 +1,47 @@
+<form #f="ngForm">
+    <div class="form-group">
+      <label>User Name</label>
+      <input #Username="ngModel" name="Username" [(ngModel)]="shipping.Username" type="text" class="form-control" required>
+      <div class="alert alert-danger" *ngIf="Username.touched && Username.invalid">
+        <div *ngIf="Username.errors.required">Name is required.</div>
+      </div>
+    </div><br>
+    <div class="form-group">
+      <label for="">CONTACT NUMBER</label>
+      <div class="input-group">
+          <span class="input-group-text">+91</span>
+          <input #ContactNumber="ngModel" [(ngModel)]="shipping.ContactNumber" name="ContactNumber" type="text" class="form-control">
+      </div>
+  </div><br>
+  <div class="form-group">
+    <label for="">Email Id</label>
+    <div class="input-group">
+        <span class="input-group-text">@</span>
+        <input #email="ngModel" [(ngModel)]="shipping.email" name="email" type="text" class="form-control" required>
+    </div>
+</div><br>
+    <div class="form-group">
+      <label>Address</label>
+      <textarea #addressLine1 ="ngModel" name="addressLine1" [(ngModel)]="shipping.addressLine1" type="textarea" class="form-control" placeholder="Type your full address..." required></textarea>
+      <div class="alert alert-danger" *ngIf="addressLine1.touched && addressLine1.invalid">
+        <div *ngIf="addressLine1.errors.required">Address Line 1 is required.</div>
+      </div>
+    </div><br>
+    <br>
+    <div class="form-group">
+      <label for="">City</label>
+      <input #city="ngModel" name="city" [(ngModel)]="shipping.city" type="text" class="form-control" required>
+      <div class="alert alert-danger" *ngIf="city.touched && city.invalid">
+        <div *ngIf="city.errors.required">City is required.</div>
+      </div>
+    </div><br>
+    <div>
+      <input type="checkbox" class="form-check-input" value="newvalue"> I have read and agree to OFFICE MART &nbsp;&nbsp;<u style="color: rgb(75, 198, 247);"><a>Terms of Service</a> &middot; <a>Cancellation policy</a> &middot; <a>Privacy policy</a></u>
+    </div><br>
+    <button 
+    [disabled]="!f.valid"
+      (click)="placeOrder()"
+      class="btn button1">Place Order</button>
+  </form>
+  <br>
+  <br>

@@ -1,0 +1,28 @@
+.button:hover {
+    width:180px;
+    height:40px;
+    color:red;
+    border-color: black;
+}
+
+.button1 {
+    width:230px;
+    height:40px;
+    background-color: black;
+    color: skyblue;
+
+}
+.round-image {
+    width: 100px;
+    height: 80px;
+    background-size: cover;
+    display: block;
+    border-radius: 20%;
+   }
+.btn-start {
+    margin-left: 600px;
+}
+.clearbutton {
+    position:fixed;
+    margin-left: 1115px;
+}

@@ -1,0 +1,16 @@
+<div class="row no-gutters">
+    <div class="col-2">
+       <button 
+         (click)="removeFromCart()"
+         class="btn btn-secondary block newbutton">-</button>
+    </div>
+    <div class="col text-center center" style="font-weight: bold;background-color: white;">
+      {{ shoppingCart.getQuantity(product) }} in cart
+    </div>
+    <div class="col-2">
+      <button 
+        (click)="addToCart()"
+        class="btn btn-secondary block mynewbutton near">+</button>
+    </div>
+ </div>
+

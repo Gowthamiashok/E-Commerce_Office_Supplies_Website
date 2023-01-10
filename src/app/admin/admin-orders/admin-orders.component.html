@@ -1,0 +1,21 @@
+<br><br>
+<h1 style="font-family: Times New Roman;">Manage Orders</h1>
+<table class="table table-light table-striped table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th style="color: skyblue;">Customer</th>
+      <th style="color: skyblue;">Date</th>
+      <th style="color: skyblue;">Update</th>
+    </tr>
+  </thead> 
+  <tbody>
+    <tr *ngFor="let order of orders$ | async ">
+      <td>{{ order?.shipping.Username }}</td>
+      <td>{{ order?.datePlaced | date}}</td>
+      <td>
+        <a style="color: black;" href="#">View</a>
+      </td>
+    </tr>
+  </tbody> 
+</table>
+<br><br>

@@ -1,0 +1,30 @@
+<br>
+<div id="slider">
+    <figure>
+          <img src="https://partner-trading.com/wp-content/uploads/2017/05/Stationery_Supply_Pg-02.png">
+          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/AmazonBrands/Se1500-300.jpg">
+          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/PC/Laptops/Buyingguide/1_-performance_01.jpg">
+    </figure>
+</div>
+<br>
+<br>
+<div class="row design">
+    <div class="col-3">
+        <product-filter [category]="category"></product-filter>
+    </div>
+    <div class="col">
+        <div class="row" *ngIf="cart$ | async as cart">
+            <ng-container *ngFor="let p of filteredProducts; let i = index">
+              <div class="col">
+                <product-card [product]="p" [shopping-cart] = "cart"></product-card>
+               </div>   
+               <div *ngIf="(i + 1) % 2 === 0" class="w-100"></div>
+            </ng-container>
+        </div>
+    </div>
+</div>
+
+ 
+
+
+    

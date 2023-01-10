@@ -1,0 +1,17 @@
+<br><br>
+<h1 style="font-family: Times New Roman;">My Orders</h1>
+<br>
+<table class="table table-light table-striped table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th style="color: skyblue;">Customer</th>
+      <th style="color: skyblue;">Date</th>
+    </tr>
+  </thead> 
+  <tbody>
+    <tr *ngFor="let order of orders$ | async">
+      <td>{{ order.payload.val().shipping.Username }}</td>
+      <td>{{ order.payload.val().datePlaced | date}}</td>
+    </tr>
+  </tbody> 
+</table><br><br>

@@ -1,0 +1,15 @@
+.newbutton {
+    width: 48px!important;
+    background-color: black;
+    color:skyblue;
+}
+.mynewbutton {
+    width: 45px!important;
+    background-color: black;
+    color:skyblue;
+}
+.center {
+    position:relative;
+    margin-left: 20px;
+}
+

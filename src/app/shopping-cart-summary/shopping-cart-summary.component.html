@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="card-body">
+      <h3 class="card-title font-weight-bold" style="text-align: center;color: forestgreen;">ORDER SUMMARY</h3>
+      <p class="card-text"><img src="./assets/cart8.jpeg" height=35 width=37 style="margin-left: 540px;">&nbsp; <sup  style="font-size: medium;color:black;">{{ cart.totalItemsCount }}</sup></p>
+      <ul class="list-group list-group-flush">
+          <li *ngFor="let item of cart.items" class="list-group-item">
+              {{ item.quantity }} * {{ item.title }}
+              <div style="text-align: right;" class="float-right">
+                  {{ item.totalPrice | currency:'₹ ':true }}
+              </div>
+          </li>
+          <br>
+      
+        <pre style="font-family: Arial, Helvetica, sans-serif;font-size:100%;color: rgb(97, 97, 97);">Delivery Charge                                                                                                                  ₹50.00</pre>
+    <pre style="font-family: Arial, Helvetica, sans-serif;font-size:100%;color: rgb(97, 97, 97);">Taxes & Charges(Incl. 18% GST)                                                                                       ₹20.80</pre>
+                                                                            
+          <li class="list-group-item font-weight-bold" style="font-size:medium;">
+              <b style="margin-left: 450px;">Grand Total</b>
+              <div class="float-right" style="margin-left: 450px;">
+                 <b> {{ cart.totalPrice + 70.00 | currency:'₹ ': true}}</b>
+              </div>
+          </li>
+      </ul>
+    </div>
+</div>
+<br><br>
